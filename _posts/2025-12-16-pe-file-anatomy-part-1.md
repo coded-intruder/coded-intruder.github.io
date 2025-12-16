@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Dissecting the PE File (Part 1): What the Windows Loader Actually Cares About"
-date: 2025-11-03 21:00:00 +0100
+date: 2025-12-16 21:00:00 +0100
 categories: [malware-dev, malware-analysis, reverse-engineering, blog]
 tags: [PE, Windows-internals]
 ---
@@ -185,7 +185,7 @@ The PE signature
 
 The COFF File Header and its role in loader decisions.
 
-In Part 2, the focus shifts to the Optional Header — where loader behavior becomes more flexible, assumptions start to matter, and small changes can dramatically alter execution.
+In Part 2, the focus shifts to the Optional Header. This is where loader behavior becomes more flexible and small changes can dramatically alter execution.
 
 That’s also where controlled experiments begin.
 
