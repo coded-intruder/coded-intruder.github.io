@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Dissecting the PE File (Part 1): What the Windows Loader Actually Cares About"
-date: 2025-12-16 21:00:00 +0000
+date: 2025-12-16 00:00:00 +0000
 categories: [malware-dev, malware-analysis, reverse-engineering, blog]
 tags: [PE, Windows-internals]
 ---
