@@ -181,20 +181,23 @@ These actions reflect configuration and policy improvements, rather than changes
 
 This behavior enables adversaries to conduct high-confidence phishing and impersonation attacks by abusing trusted infrastructure rather than exploiting software vulnerabilities.
 
+## MITRE ATT&CK Mapping
+
+This behavior enables adversaries to conduct high-confidence phishing and impersonation attacks by abusing trusted infrastructure rather than exploiting software vulnerabilities.
+
 - **T1566.002 – Phishing: Spearphishing via Service**  
-  Spoofed emails that pass SPF, DKIM, and DMARC can be delivered with verified sender indicators, enabling targeted impersonation of trusted service providers and support workflows.
+  Spoofed emails that pass SPF, DKIM, and DMARC can be delivered with verified sender indicators, enabling targeted impersonation of trusted service providers and support workflows.  
+  [More info](https://attack.mitre.org/techniques/T1566/002/)
 
 - **T1199 – Trusted Relationship**  
-  The attack abuses implicit trust relationships created by shared email infrastructure, where authentication success is derived from provider-level trust rather than tenant-level identity validation.
+  The attack abuses implicit trust relationships created by shared email infrastructure, where authentication success is derived from provider-level trust rather than tenant-level identity validation.  
+  [More info](https://attack.mitre.org/techniques/T1199/)
 
 - **T1585.002 – Establish Accounts: Email Accounts**  
-  The adversary simply registers an email account or domain with the same hosted provider to gain access to pre-trusted sending infrastructure.
+  The adversary simply registers an email account or domain with the same hosted provider to gain access to pre-trusted sending infrastructure.  
+  [More info](https://attack.mitre.org/techniques/T1585/002/)
 
-- **T1672 - Email Spoofing**
-  The shared infrastructure trust boundary allows header manipulation (From:) without breaking SPF/DKIM/DMARC, bypassing automated defenses.
+- **T1672 – Email Spoofing**  
+  The shared infrastructure trust boundary allows header manipulation (`From:`) without breaking SPF/DKIM/DMARC, bypassing automated defenses.  
+  [More info](https://attack.mitre.org/techniques/T1672/)
 
-Links:  
-- https://attack.mitre.org/techniques/T1566/002/  
-- https://attack.mitre.org/techniques/T1199/  
-- https://attack.mitre.org/techniques/T1585/002/
-- https://attack.mitre.org/techniques/T1672/
