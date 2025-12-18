@@ -164,7 +164,7 @@ After responsible disclosure, Namecheap provided the following summary of action
 >
 > As a next step, measures were introduced to prevent sending emails with forged From addresses. This action ensures that users cannot manipulate the From field to impersonate domains hosted on our platform.  
 >
-> Furthermore, a separate SPF record for [namecheap.com](http://namecheap.com/) domain was added. This enhancement provides better control over authorized sending addresses, strengthening the domain's email security posture.  
+> Furthermore, a separate SPF record for [namecheap.com](https://namecheap.com/) domain was added. This enhancement provides better control over authorized sending addresses, strengthening the domain's email security posture.  
 >
 > By implementing these corrective actions, we improved the integrity and authenticity of emails sent through Private Email, reducing the risk of spoofing attacks.
 
