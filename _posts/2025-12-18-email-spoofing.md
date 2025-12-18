@@ -181,10 +181,6 @@ These actions reflect configuration and policy improvements, rather than changes
 
 This behavior enables adversaries to conduct high-confidence phishing and impersonation attacks by abusing trusted infrastructure rather than exploiting software vulnerabilities.
 
-## MITRE ATT&CK Mapping
-
-This behavior enables adversaries to conduct high-confidence phishing and impersonation attacks by abusing trusted infrastructure rather than exploiting software vulnerabilities.
-
 - **T1566.002 – Phishing: Spearphishing via Service**  
   Spoofed emails that pass SPF, DKIM, and DMARC can be delivered with verified sender indicators, enabling targeted impersonation of trusted service providers and support workflows.  
   [More info](https://attack.mitre.org/techniques/T1566/002/)
