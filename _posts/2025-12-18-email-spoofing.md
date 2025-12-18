@@ -15,7 +15,7 @@ This post examines how these trust boundaries can break down, how spoofed emails
 
 At its core, email authentication is still **infrastructure trust–based**, not identity–based.
 
-In many real-world deployments, domains are required to include **shared provider-controlled SPF mechanisms** (for example, universal `include:` records) as part of their email configuration. These shared records often authorize large IP ranges used by thousands of tenants. Once a receiving mail server sees an authorized IP and a valid DKIM signature from the provider, **trust is implicitly extended — not just to the infrastructure, but to every tenant operating within it**.
+In many real-world deployments, domains are required to include **shared provider-controlled SPF mechanisms** (for example, universal `include:` records) as part of their email configuration. These shared records often authorize large IP ranges used by thousands of tenants. Once a receiving mail server sees an authorized IP and a valid DKIM signature from the provider, **trust is implicitly extended, not just to the infrastructure, but to every tenant operating within it**.
 
 This creates a dangerous assumption: that authorization at the provider level automatically implies legitimacy at the domain level. In practice, an attacker who simply registers a domain or mailbox with the same email provider may gain access to **infrastructure that is already trusted by the target domain’s SPF and DKIM configuration**. No exploitation of mail servers is required only correct positioning within shared trust boundary.
 
