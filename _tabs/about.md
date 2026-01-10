@@ -15,5 +15,6 @@ I'm an independent security researcher focused on hands-on experimentation and o
 
 My goal is to build a strong technical foundation through experiments, documentation, and continous learning.
 
-LinkedIn: [Wasiu Abass](www.linkedin.com/in/wasiu-abass-69985b3a1)
-Website: [Coded Intrusion](codedintrusion.com)
+
+<a href="https://www.linkedin.com/in/wasiu-abass-69985b3a1">LinkedIn</a>
+<a href="https://codedintrusion.com">Website</a>
